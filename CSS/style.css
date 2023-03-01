@@ -1,0 +1,298 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+/*Navigation and mobile menu*/
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    
+}
+nav {
+    font-family: "work sans", sans-serif;
+    background-color: #f9f9f9;
+    text-transform: uppercase;
+}
+.mobile-container img {
+    width: 50%;
+}
+/*mobile-menu*/
+.hamburger {
+    display: block;
+    position: relative;
+    z-index: 1;
+    user-select: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+.hamburger span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background-color: #356852;
+    border-radius: 6px;
+    z-index: 1;
+    transform-origin: 0 0;
+    transition: 0.4s;
+}
+/*animation for the hamburger*/
+.hamburger.is-active span:nth-child(1) {
+    transform: translate(0px, -2px) rotate(45deg);
+}
+.hamburger.is-active span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(15px);
+}
+.hamburger.is-active span:nth-child(3) {
+    transform: translate(-3px, 3px) rotate(-45deg);
+}
+/*Set to none so that you can toggle it*/
+.mobile-menu {
+    display: none;
+}
+.mobile-menu.is-active {
+    display: block;
+    font-family: "work sans", sans-serif;
+    background-color: #f9f9f9;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1% 0;
+}
+.mobile-menu ul {
+    list-style: none;
+}
+.mobile-menu li {
+    margin: 2% 0;
+}
+.mobile-menu a {
+    color: #356852;
+    text-decoration: none;
+}
+.mobile-menu a:hover {
+    color: black;
+    border-bottom: 2px solid red;
+}
+/*desktop-menu not visable on small screen*/
+.desktop-container {
+    display: none;
+}
+
+/*header picture*/
+.header-img img {
+    max-width: 100%;
+    width: 1550px;
+    margin: 0 auto;
+    display: block;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    
+  }
+  .centered p {
+      font-size: 2em;
+  }
+  .button a {
+    border:solid 3px #FFD6A0;
+    color: #FFD6A0;
+    text-decoration: none;
+    padding: 3% 2%;
+    font-size: 1em;
+    margin: 2% auto;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .button a:hover {  
+    background-color: #FFD6A0;  
+    color: #356852;
+  }
+
+  .button-whiteBG a, .button-whiteBG button{
+    border:solid 3px #356852;
+    background-color: white;  
+    color: #356852;
+    text-decoration: none;
+    padding: 3% 2%;
+    font-size: 1em;
+    margin: 2% auto;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .button-whiteBG a:hover, .button-whiteBG button:hover {
+    border:solid 3px #FFD6A0;
+    background-color: #FFD6A0;  
+    color: #356852;
+  }
+/*TEXT CONTENT*/
+  .top-message {
+      background-color: #28544B;
+      color: white;
+    
+  }
+  .text-content{
+      width: 90%;
+      margin: 0 auto;
+      
+      padding: 4% 2%;
+  }
+ 
+/*BOOKING*/
+.img-cottages img {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    margin-bottom: 2%;
+}
+ /*CONTACT*/
+ form {
+    width: 80%;
+    padding: 2%;
+    border: 3px solid #FFA06F;
+    margin: 5% auto;
+   
+  }
+  form h2 {
+    text-align: center;
+    margin-bottom: 2%;
+    font-size: 0.9em;
+  }
+  form input, form textarea{
+    width: 90%;
+    padding: 2% 4%;
+    margin: 2%;
+    display: inline-block;
+    box-sizing: border-box;
+  }
+
+  
+/*FOOTER*/
+footer {
+    background-color:#28544B ;
+    
+    margin: 2% auto 0 auto;
+    padding: 4% 2%;
+    color: #FFD6A0;
+    text-align: center;
+}
+
+footer i {
+    font-size: 1.3em;
+}
+@media only screen and (min-width: 800px){
+  
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+      }
+      
+      .column {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1;
+      }
+      
+      .double-column {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 2;
+      }
+      
+      .text-cottages h2 {
+    
+      }
+      
+    
+    
+      .img-cottages img {
+          margin: 0 auto;
+          display: block;
+          width: 100%;
+      }
+}
+
+@media only screen and (min-width: 1000px) {
+    /*navigation*/
+    .desktop-container {
+        display: block;
+    }
+    .hamburger {
+        display: none;
+    }
+    .mobile-container {
+        display: none;
+    }
+    .desktop-menu {
+        display: inline;
+    }
+
+    nav {
+        margin: auto;
+        background-color: #f9f9f9;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    nav ul {
+        list-style: none;
+    }
+    nav li {
+        padding: 2px 5px 0px 5px;
+        margin: 4% 0 4% 0;
+    }
+    nav a {
+        color: #356852;
+        text-decoration: none;
+    }
+    nav a:hover {
+        color: black;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav li:hover {
+        border-bottom: 2px solid #ff5403;
+    }
+    nav a {
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    /*TEXT CONTENT*/
+    .text-content{
+        width: 60%;
+     
+    }
+
+
+     /*COTTAGES*/
+  .cottages-container {
+    margin: 5%;
+
+  }
+  
+  /*CONTACT*/
+  form {
+    width: 50%;
+}
+form h2 {
+    font-size: 1.5em;
+}
+}

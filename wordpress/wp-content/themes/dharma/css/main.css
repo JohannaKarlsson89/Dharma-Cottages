@@ -1,0 +1,407 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, ul {
+    font-family: "Ubuntu", sans-serif;
+    margin-bottom: 2%;
+}
+p {
+    font-family: "Merriweather", serif;
+    margin: 0 auto;
+}
+/*TEXT CONTENT */
+.top-message {
+    background-color: #28544b;
+    color: white;
+}
+.text-content {
+    width: 90%;
+    margin: 0 auto;
+    padding: 4% 2%;
+}
+table {
+    width: 80%;
+    overflow-x: scroll;
+}
+img {
+    max-width: 100%;
+}
+
+/*BUTTONS*/
+
+.news a, .text-content a {
+    border: solid 3px #acbd86;
+    border-radius: 10px;
+    background-color: #acbd86;
+    color: #1f3d30;
+    text-decoration: none;
+    padding: 1.5% 1%;
+    font-size: 1em;
+    margin: 2% auto;
+   
+}
+.news a:hover, .text-content a:hover {
+    text-decoration: underline;
+    background-color: #FFD6A0;
+    border: solid 3px #FFD6A0;
+    
+}
+.submitBtn {
+    color: #28544B;
+    background-color: #ACBD86;
+    font-family: "Ubuntu", sans-serif;
+}
+.submitBtn:hover {
+    background-color: #FFD6A0;
+    text-decoration: underline;
+}
+    
+/*TEXT CONTENT*/
+.main-content {
+    width: 90%;
+    margin: 0 auto;
+}
+.main-content h2,
+.main-content p {
+    width: 90%;
+    margin: 0 auto;
+}
+.main-content img {
+    display: block;
+    margin: 5% auto;
+}
+
+/*Navigation and mobile menu*/
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+}
+nav {
+    margin-bottom: 1%;
+    text-transform: uppercase;
+}
+nav a {
+    color:#28544B;
+    text-decoration: none;
+    
+}
+.mobile-container img {
+    width: 50%;
+}
+/*mobile-menu*/
+.hamburger {
+    display: block;
+    position: relative;
+    z-index: 1;
+    user-select: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+.hamburger span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background-color: #ACBD86;
+    border-radius: 6px;
+    z-index: 1;
+    transform-origin: 0 0;
+    transition: 0.4s;
+}
+/*animation for the hamburger*/
+.hamburger.is-active span:nth-child(1) {
+    transform: translate(0px, -2px) rotate(45deg);
+}
+.hamburger.is-active span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(15px);
+}
+.hamburger.is-active span:nth-child(3) {
+    transform: translate(-3px, 3px) rotate(-45deg);
+}
+/*Set to none so that you can toggle it*/
+.mobile-menu {
+    display: none;
+}
+.mobile-menu.is-active {
+    display: block;
+    font-family: "Ubuntu", sans-serif;
+    background-color: #f9f9f9;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1% 0;
+}
+.mobile-menu ul {
+    list-style: none;
+}
+.mobile-menu li {
+    margin: 3% 0;
+}
+.mobile-menu a {
+    color: #ACBD86;
+    text-decoration: none;
+}
+.mobile-menu a:hover {
+    color: #ffd6a0;
+    border-bottom: 2px solid #ffd6a0;
+}
+/*desktop-menu not visable on small screen*/
+.desktop-container {
+    display: none;
+}
+
+/*header picture*/
+.header-img img {
+    width: 100%;
+    height: auto;
+   
+}
+
+.centered {
+   display: none;
+}
+
+.button a {
+   display: none;
+}
+
+
+.button-whiteBG a,
+.button-whiteBG button {
+    border: solid 3px #356852;
+    background-color: white;
+    color: #356852;
+    text-decoration: none;
+    padding: 3% 2%;
+    font-size: 1em;
+    margin: 2% auto;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
+.button-whiteBG a:hover,
+.button-whiteBG button:hover {
+    border: solid 3px #ffd6a0;
+    background-color: #ffd6a0;
+    color: #356852;
+}
+/*NEWS PAGE*/
+.news {
+    width: 95%;
+    margin: 0 auto;
+    padding: 4% 2%;
+}
+.news img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2%;
+}
+/*COTTAGES PAGE*/
+.img-cottages img {
+    margin: 0 auto;
+    width: auto;
+    display: block;
+    margin-bottom: 2%;
+}
+.cottages-container ul {
+    background-color: #acbd86;
+    width: 100%;
+    padding: 2%;
+    list-style: none;
+    line-height: 1.2;
+}
+
+/*CONTACT/ABOUT US PAGE*/
+form {
+    width: 90%;
+    padding: 2%;
+    border: 3px solid #ACBD86;
+    margin: 5% auto;
+}
+form input,
+form textarea {
+    width: 90%;
+    padding: 2% 4%;
+    margin: 2%;
+    display: inline-block;
+    box-sizing: border-box;
+}
+/*SCHEDULE PAGE*/
+.schedule  {
+   width: 90%;
+   margin: 0 auto;
+}
+.schedule h2, .schedule p {
+  text-align: center;
+}
+/*FOOTER*/
+footer {
+    width: 100%;
+    background-color: #28544b;
+    margin: 2% auto 0 auto;
+    padding: 4% 0;
+    color: #ffd6a0;
+    text-align: center;
+}
+footer p {
+    margin: 4% 0;
+}
+footer i {
+    font-size: 1.3em;
+    margin:10% 1%;
+}
+
+
+@media only screen and (min-width: 600px) {
+
+  
+    .button a {
+        border: solid 3px #ffd6a0;
+        color: #ffd6a0;
+        text-decoration: none;
+        padding: 3% 2%;
+        font-size: 1em;
+        margin: 2% auto;
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .button a:hover {
+        background-color: #ffd6a0;
+        color: #356852;
+    }
+
+} 
+
+@media only screen and (min-width: 800px) {
+    /*NEWS AND COTTAGES*/
+    .news {
+        width: 50%;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1;
+    }
+
+    .double-column {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 2;
+    }
+
+    .img-cottages img {
+        display: block;
+        
+        margin: 0 auto;
+        display: block;
+    }
+
+.text-content {
+    width: 80%;
+}
+
+}
+@media only screen and (min-width: 1000px) {
+    /*NAVIGATION*/
+    .desktop-container {
+        display: block;
+    }
+    .hamburger {
+        display: none;
+    }
+    .mobile-container {
+        display: none;
+    }
+    .desktop-menu {
+        display: inline;
+        margin-top: 3%;
+    }
+
+    nav {
+        margin: auto;
+   
+        text-align: center;
+    }
+
+    nav ul {
+        list-style: none;
+    }
+    nav li {
+        padding: 2px 5px 0px 5px;
+        margin: 4% 0 4% 0;
+    }
+    
+    nav a:hover {
+        color: #ACBD86;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav li:hover {
+        border-bottom: 2px solid #ACBD86;
+    }
+    .centered {
+        display: inline;
+       
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+    }
+    .centered p {
+        font-size: 2em;
+    }
+   
+    .centered {
+        display: inline;
+        top: 50%;
+    }
+    
+    /*TEXT CONTENT*/
+    .text-content {
+        width: 80%;
+    }
+
+    /*COTTAGES*/
+    .cottages-container {
+        margin: 5%;
+    }
+
+    /*CONTACT*/
+   
+    form h2 {
+        font-size: 1.5em;
+    }
+
+footer p {
+    margin: 2% 0;
+}
+
+  
+}
